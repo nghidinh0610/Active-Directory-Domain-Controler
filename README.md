@@ -25,19 +25,24 @@ Launch the utility: <br/>
 This is the setting of the 2 VM we will create. DC will be the domain controler and CLIENT1 is just a VM to test log in information 
 <br />
 <br />
-Create DC and config :  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Setting up 2 network in DC, 1 NAT (to connect to your home internet) and 1 internal (for VM):  
+<br/> (Additionally, change Shared Clipboard and Drag'n'Drop to Bidirectional to be able to copy stuff from your computer to VMs)
+<br/><img src=""height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br/><img src=""height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Start the VM. WHen it ask for DVD, locate to Window Server 2019 ISO file: <br/>
+<a href="https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019">You can download the Window Server 2019 ISO right here <a>
+<br/><img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<br/><img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Decline all service and create a password. Ideally Password1 for home lab and something else complicate in real environment:  <br/>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
+Log onto the VM. Go to network setting to setup IP  <br/>
+Go to network setting on right down corner, click on the network setting, then choose "Change adapter options"
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
