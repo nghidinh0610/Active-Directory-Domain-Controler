@@ -1,7 +1,5 @@
 <h1>Active Directory Domain Controler</h1>
 
- ### [Tutorial Source](https://www.youtube.com/watch?v=MHsI8hJmggI)
-
 <h2>Description</h2>
 Project consists of making an active directory for organizations to manage credential of users and network traffic. Consist of a Powershell script to create 1000 users and another VM to test log in.
 <br />
