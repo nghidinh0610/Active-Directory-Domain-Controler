@@ -17,19 +17,19 @@ Project consists of making an active directory for organizations to manage crede
 <h2>Program walk-through:</h2>
 
 Launch the utility: <br/>
-<img src="" height="80%" width="80%" alt="9"/><br />
+<img src="https://imgur.com/jOSr9Yd" height="80%" width="80%" alt="9"/><br />
  
 This is the setting of the 2 VM we will create. DC will be the domain controler and CLIENT1 is just a VM to test log in information 
 <br />
-<img src="https://www.facebook.com/photo?fbid=327623696645895&set=pcb.327623839979214" height="80%" width="80%" alt="1"/><br>
-<img src="https://www.facebook.com/photo?fbid=327623739979224&set=pcb.327623839979214" height="80%" width="80%" alt="2"/><br>
+<img src="" width="80%" alt="1"/><br>
+<img src="" height="80%" width="80%" alt="2"/><br>
 <br />
 
 Setting up 2 network in DC, 1 NAT (to connect to your home internet) and 1 internal (for VM):  <br>
 (Additionally, change Shared Clipboard and Drag'n'Drop to Bidirectional to be able to copy stuff from your computer to VMs)
 <br/><img src="" height="80%" width="80%" alt="5"/>
-<br/><img src="" height="80%" width="80%" alt="6"/>
-<br/><img src="" height="80%" width="80%" alt="3"/>
+<br/><img src="https://imgur.com/MqkSzDF" height="80%" width="80%" alt="6"/>
+<br/><img src="https://imgur.com/SU1PhXm" height="80%" width="80%" alt="3"/>
 <br />
 <br />
 
@@ -59,7 +59,7 @@ Now, go status ➡️ detail and look at IPv4 Address to rename them (1 is inter
 <br />
 
 After rename them, go to Internal and change its properties: <br/>
-<img src="" height="80%" width="80%" alt="12"/><br>
+<img src="https://imgur.com/QEJuIzO" height="80%" width="80%" alt="12"/><br>
 
 Go to Server Manager ➡️ Add roles and features ➡️ create an Active Directory, a DHCP Server and a DNS Serever<br/>
 <img src="" height="80%" width="80%" alt="13"/><br>
@@ -89,7 +89,7 @@ Go Server Manager ➡️ Tools ➡️ Routing and Remote Access ➡️right clic
  <img src="" height="80%" width="80%" alt="22"/><br>
  
  Right click on the domain to choose Authorize, then refresh IPv4<br>
- <img src="" height="80%" width="80%" alt="21"/><br>
+ <img src="https://imgur.com/YGCniu6" height="80%" width="80%" alt="21"/><br>
 
  Now come the fun part, PowerShell Script. Use <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmZMZVlzRU5seVA2QUpxa1dVZXNfckJyejRsUXxBQ3Jtc0tsWTZVRk8wR0x3ODIxVHpWUUItaDdOTzB3VVA2ajlpbnEyN1BkMW5nSFJ2Sm5pQ0pOVEdqTURkN1FPVFdqdnQ0XzlPcXFUU2FTT0xBb2d4RDVzSm85YkVlNUpWSGs3ZExzUzI4eHpNWWp5TGNmc3lDbw&q=https%3A%2F%2Fgithub.com%2Fjoshmadakor1%2FAD_PS%2Farchive%2Frefs%2Fheads%2Fmaster.zip&v=MHsI8hJmggI">this link <a> to download the script script <br>
  Extract the file. Open name.txt and add your own name (2 words) <br>
@@ -97,7 +97,7 @@ Go Server Manager ➡️ Tools ➡️ Routing and Remote Access ➡️right clic
  
  Run the PowerShell ISE as administrator, then run the script (F5). Some error will show but it will not matter
  <img src="" height="80%" width="80%" alt="29"/><br>
- <img src="" height="80%" width="80%" alt="30"/><br>
+ <img src="https://imgur.com/6s6EMsC" height="80%" width="80%" alt="30"/><br>
  
  So, that's it for the Domain Controler. Now our next step would be create an example of a computer that is under this domain <br>
  Go to Oracle VM VirtualBox, create a new VM, name it CLIENT1<br>
