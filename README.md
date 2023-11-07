@@ -16,7 +16,6 @@ Project consists of making an active directory for organizations to manage crede
 
 <h2>Program walk-through:</h2>
 
-<p align="center">
 Launch the utility: <br/>
 <img src="" height="80%" width="80%" alt="9"/><br />
  
@@ -26,11 +25,11 @@ This is the setting of the 2 VM we will create. DC will be the domain controler 
 <img src="" height="80%" width="80%" alt="2"/><br>
 <br />
 
-Setting up 2 network in DC, 1 NAT (to connect to your home internet) and 1 internal (for VM):  
-<br/> (Additionally, change Shared Clipboard and Drag'n'Drop to Bidirectional to be able to copy stuff from your computer to VMs)
-<br/><img src=""height="80%" width="80%" alt="5"/>
-<br/><img src=""height="80%" width="80%" alt="6"/>
-<br/><img src=""height="80%" width="80%" alt="3"/>
+Setting up 2 network in DC, 1 NAT (to connect to your home internet) and 1 internal (for VM):  <br>
+(Additionally, change Shared Clipboard and Drag'n'Drop to Bidirectional to be able to copy stuff from your computer to VMs)
+<br/><img src="" height="80%" width="80%" alt="5"/>
+<br/><img src="" height="80%" width="80%" alt="6"/>
+<br/><img src="" height="80%" width="80%" alt="3"/>
 <br />
 <br />
 
@@ -89,24 +88,47 @@ Go Server Manager ➡️ Tools ➡️ Routing and Remote Access ➡️right clic
  <img src="" height="80%" width="80%" alt="23"/><br>
  <img src="" height="80%" width="80%" alt="22"/><br>
  
- Right click on the domain to choose Authorize, then refresh IPv4
+ Right click on the domain to choose Authorize, then refresh IPv4<br>
  <img src="" height="80%" width="80%" alt="21"/><br>
 
- Now come the fun part, PowerShell Script. Use <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmZMZVlzRU5seVA2QUpxa1dVZXNfckJyejRsUXxBQ3Jtc0tsWTZVRk8wR0x3ODIxVHpWUUItaDdOTzB3VVA2ajlpbnEyN1BkMW5nSFJ2Sm5pQ0pOVEdqTURkN1FPVFdqdnQ0XzlPcXFUU2FTT0xBb2d4RDVzSm85YkVlNUpWSGs3ZExzUzI4eHpNWWp5TGNmc3lDbw&q=https%3A%2F%2Fgithub.com%2Fjoshmadakor1%2FAD_PS%2Farchive%2Frefs%2Fheads%2Fmaster.zip&v=MHsI8hJmggI">this link <a> to download the script script
+ Now come the fun part, PowerShell Script. Use <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmZMZVlzRU5seVA2QUpxa1dVZXNfckJyejRsUXxBQ3Jtc0tsWTZVRk8wR0x3ODIxVHpWUUItaDdOTzB3VVA2ajlpbnEyN1BkMW5nSFJ2Sm5pQ0pOVEdqTURkN1FPVFdqdnQ0XzlPcXFUU2FTT0xBb2d4RDVzSm85YkVlNUpWSGs3ZExzUzI4eHpNWWp5TGNmc3lDbw&q=https%3A%2F%2Fgithub.com%2Fjoshmadakor1%2FAD_PS%2Farchive%2Frefs%2Fheads%2Fmaster.zip&v=MHsI8hJmggI">this link <a> to download the script script <br>
+ Extract the file. Open name.txt and add your own name (2 words) <br>
  <img src="" height="80%" width="80%" alt=""/><br>
  <img src="" height="80%" width="80%" alt=""/><br>
+ 
+ Run the PowerShell ISE as administrator, then run the script (F5). Some error will show but it will not matter
  <img src="" height="80%" width="80%" alt=""/><br>
  <img src="" height="80%" width="80%" alt=""/><br>
+ 
+ So, that's it for the Domain Controler. Now our next step would be create an example of a computer that is under this domain <br>
+ Go to Oracle VM VirtualBox, create a new VM, name it CLIENT1<br>
+ <img src="" height="80%" width="80%" alt=""/><br>
+ 
+ Go to setting, Shared Clipboard and Dra'n'Drop should both be Bidirectional<br>
+ Network, change it from NAT to Internal Network<br> 
  <img src="" height="80%" width="80%" alt=""/><br>
  <img src="" height="80%" width="80%" alt=""/><br>
-</p>
+ 
+ Start the VM. This time, choose window 10 instead. <br>
+ You can get windown 10 by download <a href="">this <a>, run it and wait until it finish creating ISO file. Choose the ISO file <br>
+ <img src="" height="80%" width="80%" alt=""/><br>
+ <img src="" height="80%" width="80%" alt=""/><br>
+ 
+ Go forward, decline all service and create a local account instead (it will try to make you create an online account) <br>
+ After you're done with setting up the window, right click on window icon ➡️ System ➡️ Scroll down the Rename this PC (advance)<br>
+ <img src="" height="80%" width="80%" alt=""/><br>
+ 
+ Then go to Change, change your computer name to something make sense (CLIENT1 is good), then choose member of Domain, type in your domain<br>
+ <img src="" height="80%" width="80%" alt=""/><br>
+ 
+ Now, this one happened to me. When I do this, it say can't find the domain<br>
+ Don't panic. You are still on the right track. Go to Oracle VM VirtualBox, go to setting ➡️ network, check if it's internal. Mine they always change back to NAT, even I have changed earlier. Now you should see your own domain.<br>
+ This dialog will show up if things go through. Use admin account you created earlier to log on, the restart it.<br>
+ <img src="" height="80%" width="80%" alt=""/><br>
+ 
+There you go, you got your first Active Directory created
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+<h2>Conclusion</h2>
+Active Directory is essential for every organization to manage their network traffic and make sure there is no unauthorize user got into the internal network or some leech to external party. It's also a basic principal for all IT professional to know and learn no matter what your main role is. Hope you find this blog informative and helpful<br>
+
+### [LINK TO THE ORIGINAL YOUTUBE TUTORIAL](https://www.youtube.com/watch?v=MHsI8hJmggI&t=2135s)
