@@ -21,8 +21,8 @@ Launch the utility: <br/>
  
 This is the setting of the 2 VM we will create. DC will be the domain controler and CLIENT1 is just a VM to test log in information 
 <br />
-<img src="https://photos.google.com/u/1/photo/AF1QipPOgE_b44l03s7DlJYlHjoyEKwwUeVIOyLCxdxk" height="80%" width="80%" alt="1"/><br>
-<img src="https://photos.google.com/u/1/photo/AF1QipNeKOnMO923AygONUquJCemiHIJS2aK3Dv9Y4ew" height="80%" width="80%" alt="2"/><br>
+<img src="https://www.facebook.com/photo?fbid=327623696645895&set=pcb.327623839979214" height="80%" width="80%" alt="1"/><br>
+<img src="https://www.facebook.com/photo?fbid=327623739979224&set=pcb.327623839979214" height="80%" width="80%" alt="2"/><br>
 <br />
 
 Setting up 2 network in DC, 1 NAT (to connect to your home internet) and 1 internal (for VM):  <br>
