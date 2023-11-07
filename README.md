@@ -92,7 +92,7 @@ Go Server Manager ➡️ Tools ➡️ Routing and Remote Access ➡️right clic
  Right click on the domain to choose Authorize, then refresh IPv4
  <img src="" height="80%" width="80%" alt="21"/><br>
 
- Now come the fun part, PowerShell Script. Use this script
+ Now come the fun part, PowerShell Script. Use <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmZMZVlzRU5seVA2QUpxa1dVZXNfckJyejRsUXxBQ3Jtc0tsWTZVRk8wR0x3ODIxVHpWUUItaDdOTzB3VVA2ajlpbnEyN1BkMW5nSFJ2Sm5pQ0pOVEdqTURkN1FPVFdqdnQ0XzlPcXFUU2FTT0xBb2d4RDVzSm85YkVlNUpWSGs3ZExzUzI4eHpNWWp5TGNmc3lDbw&q=https%3A%2F%2Fgithub.com%2Fjoshmadakor1%2FAD_PS%2Farchive%2Frefs%2Fheads%2Fmaster.zip&v=MHsI8hJmggI">this link <a> to download the script script
  <img src="" height="80%" width="80%" alt=""/><br>
  <img src="" height="80%" width="80%" alt=""/><br>
  <img src="" height="80%" width="80%" alt=""/><br>
