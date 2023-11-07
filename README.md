@@ -93,38 +93,36 @@ Go Server Manager ➡️ Tools ➡️ Routing and Remote Access ➡️right clic
 
  Now come the fun part, PowerShell Script. Use <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmZMZVlzRU5seVA2QUpxa1dVZXNfckJyejRsUXxBQ3Jtc0tsWTZVRk8wR0x3ODIxVHpWUUItaDdOTzB3VVA2ajlpbnEyN1BkMW5nSFJ2Sm5pQ0pOVEdqTURkN1FPVFdqdnQ0XzlPcXFUU2FTT0xBb2d4RDVzSm85YkVlNUpWSGs3ZExzUzI4eHpNWWp5TGNmc3lDbw&q=https%3A%2F%2Fgithub.com%2Fjoshmadakor1%2FAD_PS%2Farchive%2Frefs%2Fheads%2Fmaster.zip&v=MHsI8hJmggI">this link <a> to download the script script <br>
  Extract the file. Open name.txt and add your own name (2 words) <br>
- <img src="" height="80%" width="80%" alt=""/><br>
- <img src="" height="80%" width="80%" alt=""/><br>
+ <img src="" height="80%" width="80%" alt="28"/><br>
  
  Run the PowerShell ISE as administrator, then run the script (F5). Some error will show but it will not matter
- <img src="" height="80%" width="80%" alt=""/><br>
- <img src="" height="80%" width="80%" alt=""/><br>
+ <img src="" height="80%" width="80%" alt="29"/><br>
+ <img src="" height="80%" width="80%" alt="30"/><br>
  
  So, that's it for the Domain Controler. Now our next step would be create an example of a computer that is under this domain <br>
  Go to Oracle VM VirtualBox, create a new VM, name it CLIENT1<br>
- <img src="" height="80%" width="80%" alt=""/><br>
+ <img src="" height="80%" width="80%" alt="33"/><br>
  
  Go to setting, Shared Clipboard and Dra'n'Drop should both be Bidirectional<br>
  Network, change it from NAT to Internal Network<br> 
- <img src="" height="80%" width="80%" alt=""/><br>
- <img src="" height="80%" width="80%" alt=""/><br>
+ <img src="" height="80%" width="80%" alt="31"/><br>
+ <img src="" height="80%" width="80%" alt="32"/><br>
  
  Start the VM. This time, choose window 10 instead. <br>
  You can get windown 10 by download <a href="">this <a>, run it and wait until it finish creating ISO file. Choose the ISO file <br>
- <img src="" height="80%" width="80%" alt=""/><br>
- <img src="" height="80%" width="80%" alt=""/><br>
+ <img src="" height="80%" width="80%" alt="34"/><br>
  
  Go forward, decline all service and create a local account instead (it will try to make you create an online account) <br>
  After you're done with setting up the window, right click on window icon ➡️ System ➡️ Scroll down the Rename this PC (advance)<br>
- <img src="" height="80%" width="80%" alt=""/><br>
+ <img src="" height="80%" width="80%" alt="35"/><br>
  
  Then go to Change, change your computer name to something make sense (CLIENT1 is good), then choose member of Domain, type in your domain<br>
- <img src="" height="80%" width="80%" alt=""/><br>
+ <img src="" height="80%" width="80%" alt="36"/><br>
  
  Now, this one happened to me. When I do this, it say can't find the domain<br>
  Don't panic. You are still on the right track. Go to Oracle VM VirtualBox, go to setting ➡️ network, check if it's internal. Mine they always change back to NAT, even I have changed earlier. Now you should see your own domain.<br>
  This dialog will show up if things go through. Use admin account you created earlier to log on, the restart it.<br>
- <img src="" height="80%" width="80%" alt=""/><br>
+ <img src="" height="80%" width="80%" alt="37"/><br>
  
 There you go, you got your first Active Directory created
 
